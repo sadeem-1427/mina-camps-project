@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إنشاء حساب - نظام إدارة المخيمات</title>
+    <!-- مكتبة الأيقونات لتتوافق مع تصميم الصفحة الرئيسية -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- زر سريع للعودة إلى الصفحة الرئيسية -->
+    <div style="position: absolute; top: 20px; right: 20px; z-index: 100;">
+        <a href="index.html" style="text-decoration: none; color: #c5a880; font-weight: bold; font-size: 15px; display: flex; align-items: center; gap: 8px;">
+            <i class="fa-solid fa-arrow-right"></i> العودة للرئيسية
+        </a>
+    </div>
+
+    <div class="page">
+
+        <div class="register-card">
+
+            <!-- الشعار -->
+            <div class="logo">
+                <img src="logo.png" alt="شعار النظام">
+            </div>
+            
+            <!-- اسم النظام -->
+            <h1>نظام إدارة المخيمات</h1>
+
+            <p class="subtitle">
+                إدارة ذكية وسهولة للمخيمات
+            </p>
+
+            <!-- العنوان -->
+            <h2>إنشاء حساب</h2>
+
+            <p class="description">
+                أنشئ حسابك وابدأ بإدارة مخيمك بسهولة
+            </p>
+
+            <!-- عند الضغط على الزر يتم توجيه المستخدم تلقائياً للرئيسية index.html -->
+            <form action="index.html" method="GET">
+
+                <div class="input-group">
+                    <label>الاسم الكامل</label>
+                    <input type="text" placeholder="أدخل اسمك الكامل" required>
+                </div>
+
+                <div class="input-group">
+                    <label>البريد الإلكتروني</label>
+                    <input type="email" placeholder="example@email.com" required>
+                </div>
+
+                <div class="input-group">
+                    <label>كلمة المرور</label>
+                    <input type="password" placeholder="أدخل كلمة المرور" required>
+                </div>
+
+                <div class="input-group">
+                    <label>تأكيد كلمة المرور</label>
+                    <input type="password" placeholder="أعد إدخال كلمة المرور" required>
+                </div>
+
+                <button type="submit">
+                    إنشاء الحساب
+                </button>
+
+            </form>
+
+            <p class="login-text">
+                لديك حساب بالفعل؟
+                <a href="login.html">تسجيل الدخول</a>
+            </p>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
